@@ -83,6 +83,10 @@ img{
   color: brown;
 }
 
+.pTag-section{
+height: 20px;
+}
+
 #Home{
   background:black;
   height: auto;
@@ -331,7 +335,7 @@ img{
   #contact-img{
     width: 200px;
     height:200px;
-    margin:0;
+    margin-right:5px;
   }
   .card{
     width: 200px;
@@ -339,7 +343,10 @@ img{
   }
 
   .pTag{
-    font-size: 10px;
+    font-size: 15px;
+  }
+  .pTag-section{
+    height: 25px;
   }
 
   .bootstrap_all{
