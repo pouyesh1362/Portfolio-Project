@@ -1,0 +1,308 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+
+html,body {
+  font-family: 'Spectral', serif;
+  font-family: 'Source Serif Pro', serif;
+  box-sizing: border-box;
+}
+
+
+.navbar_top{
+  display: flex;
+  justify-content: space-around;
+  width:30%;
+}
+.navbar_top li{
+  list-style: none;
+}
+.navbar_top a{
+  color:whitesmoke;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  font-size: 14px;
+}
+
+.navbar_top{
+  height: 25px;
+  width:100%;
+  background: black;
+  padding:10px 0px 20px 0px;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.navbar_top div{
+  display:inline-flex;
+}
+.navbar_top ul li{
+display:inline-flex;
+padding: 10px;
+}
+img{
+  max-width: 100%;
+}
+
+.navbar_top ul li a{
+  text-decoration: none;
+  font-size:20px;
+  color:red;
+  transform: rotate(0deg);
+  transition: 1s;
+  cursor: pointer;
+}
+.navbar_top ul li a:hover{
+  border: 1px solid white;
+  margin: -2px;
+  transform: rotate(40deg) scale(1.2);
+  background: blueviolet;
+  color:white;
+  transition: 1s;
+  z-index: 10;
+  box-shadow: 10px 10px 8px 0 rgba(54, 204, 54, 0.7);
+}
+.pTag{
+    animation: 
+      pulse 3s ease infinite alternate, 
+      nudge 5s linear infinite alternate; 
+}
+
+.pTag{
+  margin-left: 40px;
+  color: brown;
+}
+
+#Home{
+  background:black;
+  height: auto;
+  color: antiquewhite;
+}
+#About{
+  background: blueviolet;
+  font-size: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 70px;
+}
+#Skills{
+  background: chartreuse;
+  font-size: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 70px;
+}
+#Projects{
+  background: chocolate;
+  font-size: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 70px;
+}
+#Contact{
+  background: cyan;
+  font-size: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 70px;
+}
+.nav-link{
+  transform: rotate(0deg);
+  transition: 1s;
+  color: greenyellow;
+}
+
+#email-img{
+
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+  
+}
+
+
+#footer-nav{
+  background-color:gray;
+  position: fixed;
+  bottom:0 ;
+  width: 100%;
+  z-index: 10;
+  
+}
+
+#email-img{
+  animation: 5s infinite;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+
+
+.card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 2000px;
+  border-radius: 30px;
+  margin: 20px;
+  display: inline-flex;
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(235, 232, 232, 0.7);
+  
+  
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-face, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+}
+
+.card-face {
+  background-color: #bbb;
+  color: black;
+  
+}
+
+.card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+}
+
+#project-aside{
+  background-color: yellow;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.ul-card li{
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+  color: red;
+  text-decoration: none;
+  list-style: none;
+  padding: 2px;
+  margin:3px;
+  background-color: white;
+}
+
+#contact-img{
+  border-radius: 40px;
+  height: 400px;
+  width: 400px;
+  margin-left: 250px;
+  z-index: 1;
+  box-shadow: 10px 10px 8px 0 rgba(204, 54, 54, 0.7);
+}
+
+#contact-img{
+  animation:  
+  pulse 3s ease infinite alternate, 
+  nudge 5s linear infinite alternate;   
+}
+
+#contact-ul{
+  list-style: none;
+}
+
+.wrapper::after{
+
+  background: rgba(0,0,0,0.2);
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.first-alpha{
+  font-size: 50px;
+  color: red;
+}
+.inner-span{
+
+  color: red;
+  font-size: 20px;
+}
+
+.inner-link{
+  text-decoration: none;
+  color: aqua;
+  z-index: 1;
+  transition: 1s;
+  
+}
+.inner-link:hover{
+  color: red;
+  cursor: pointer;
+  text-decoration: underline; 
+  transition: 1s;
+  z-index: 1;
+}
+
+.main-article{
+
+  padding: 40px 200px 40px 200px;
+  text-align: justify;
+}
+
+@media (max-width:500px) {
+  .navbar_top ul li a{
+    width: 100%;
+    margin: 1px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+h1{
+  font-size: 25px;
+}
+
+#contact-img{
+  width: 200px;
+  height:200px;
+  margin:0;
+}
+.card{
+  width: 200px;
+  height: 200px;
+}
+.pTag{
+  font-size: 10px;
+}
+
+}
+
+
