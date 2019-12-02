@@ -14,15 +14,15 @@ html,body {
 }
 
 
-.navbar_top{
+.nav_top{
   display: flex;
   justify-content: space-around;
   width:30%;
 }
-.navbar_top li{
+.nav_top li{
   list-style: none;
 }
-.navbar_top a{
+.nav_top a{
   color:whitesmoke;
   text-decoration: none;
   letter-spacing: 3px;
@@ -30,8 +30,8 @@ html,body {
   font-size: 14px;
 }
 
-.navbar_top{
-  height: 25px;
+.nav_top{
+  height: 60px;
   width:100%;
   background: black;
   padding:10px 0px 20px 0px;
@@ -40,10 +40,10 @@ html,body {
   z-index: 10;
 }
 
-.navbar_top div{
+.nav_top div{
   display:inline-flex;
 }
-.navbar_top ul li{
+.nav_top ul li{
 display:inline-flex;
 padding: 10px;
 }
@@ -51,7 +51,7 @@ img{
   max-width: 100%;
 }
 
-.navbar_top ul li a{
+.nav_top ul li a{
   text-decoration: none;
   font-size:20px;
   color:red;
@@ -59,7 +59,7 @@ img{
   transition: 1s;
   cursor: pointer;
 }
-.navbar_top ul li a:hover{
+.nav_top ul li a:hover{
   border: 1px solid white;
   margin: -2px;
   transform: rotate(40deg) scale(1.2);
@@ -203,6 +203,7 @@ img{
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
+  box-shadow: 5px 10px 10px 0 rgba(196, 228, 79, 0.7);
 }
 .ul-card li{
   font-size: 20px;
@@ -279,6 +280,30 @@ img{
   text-align: justify;
 }
 
+.bootstrap_all{
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.inner-bootstrap{
+  margin:30px;
+}
+
+.skills-div{
+  background:whitesmoke;  
+  height: auto;
+  text-align: center;
+  width: 100px;
+  border-radius: 20px;
+  border: 3px solid rgba(92, 8, 8, 0.363) ;
+  box-shadow:10px 10px 10px 10 rgba(20, 236, 218, 0.815);
+}
+.skills-li{
+  list-style: none;
+  padding: 3px;
+}
+
 @media (max-width:500px) {
   .navbar_top ul li a{
     width: 100%;
@@ -288,6 +313,13 @@ img{
 }
 h1{
   font-size: 25px;
+}
+.li-percent{
+  background-color: red;
+  width: 400px;
+  height: 40px;
+  margin: 10px;
+
 }
 
 #contact-img{
