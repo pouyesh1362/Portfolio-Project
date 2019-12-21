@@ -102,11 +102,12 @@ height: 20px;
 }
 
 #Skills{
-  background: chartreuse;
+  background: rgb(14, 148, 150);
   font-size: 20px;
   max-width: 100%;
   height: auto;
   padding: 70px;
+  z-index: 1;
 }
 
 #Projects{
@@ -115,6 +116,7 @@ height: 20px;
   max-width: 100%;
   height: auto;
   padding: 70px;
+  z-index: 1;
 }
 
 #Contact{
@@ -310,6 +312,21 @@ height: 20px;
   list-style: none;
   padding: 3px;
 }
+.images{
+  position: relative;
+}
+
+#pouyesh{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.276);
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 520px;
+}
+
 
 @media (max-width:500px) {
     .navbar_top ul li a{
@@ -409,6 +426,11 @@ height: 20px;
   #Contact{
     width: 100%;
   }
+ #pouyesh{
+   
+  width: 100px;
+  height: 100px;
+ }
 }
 
 
